@@ -9,6 +9,16 @@
 }
 /* shared styles */
 
+.btn-primary{
+  background-color: rgb(255, 144, 14);
+  border-radius: 8px;
+  padding: 18px 25px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+}
+
 .navbar-display{
   display: flex;
 }
@@ -33,22 +43,59 @@
 
 .navbar{
   justify-content: space-between;
+  align-items: center;
+}
+
+.brand{
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .nav-link{
   text-decoration: none;
-  font-weight: 500;
-  
+  font-weight: 500; 
 }
 
 .nav-item{
   list-style: none;
-  margin-right: 20px;
-  font-size: 18px;
-  
+  /* margin-right: 20px;
+  font-size: 18px; */
 }
 
 .navbar, .banner{
-  max-width: 1440px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
+/* banner related styles */
+
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+ 
+}
+
+.banner-title{
+  color: rgb(19, 19, 19);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.banner-image{
+  max-width: 1080px;
+  width: 100%; 
+}
+
+
+/* responsive media query */
+@media screen and (max-width :576px) {
+  .navbar, .nav-link{
+    flex-direction: column;
+  }
+  
+} 
